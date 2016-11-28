@@ -354,16 +354,7 @@ footer {
     font-size: 12px;
 }
 
-.header-modelo-2016-img {
-    float: left;
-    width: 98px;
-    height: 98px;
-    background-color: #EEE;
-    margin-right: 10px;
-}
-.header-modelo-2016-txt {
-    float: left;
-}
+
 .header-modelo-2016-txt h4 {
     margin: 0px;
     font-size: 14px;
@@ -853,9 +844,19 @@ footer {
 }
 
 
-
+/* Ajustes respoinsivo home */
 @media screen and (max-width: 991px) {
     .home-imgdemo {
         display: none;
     }
+    .primeiro-texto {
+        text-align: center;
+    }
+    .primeiro-texto-imagem {
+        text-align: center;
+    }
+    .header-modelo-2016-txt {
+        text-align: center;
+    }
 }
+/* FIM Ajustes respoinsivo home */

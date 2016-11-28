@@ -1,0 +1,68 @@
+[21-Nov-2016 18:37:09 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:37:09 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:4
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(4): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:37:10 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:37:10 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:4
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(4): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:37:32 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:37:32 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:4
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(4): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 4
+[21-Nov-2016 18:38:02 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[21-Nov-2016 18:38:02 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:3
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(3): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[21-Nov-2016 18:39:14 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[21-Nov-2016 18:39:14 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:3
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(3): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[21-Nov-2016 18:39:21 America/Sao_Paulo] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[21-Nov-2016 18:39:21 America/Sao_Paulo] PHP Fatal error:  Uncaught SoapFault exception: [WSDL] SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://localhost/lib/ws.php' : Start tag expected, '<' not found
+ in /var/www/html/public/lib/SolicitarContatoTelefone.php:3
+Stack trace:
+#0 /var/www/html/public/lib/SolicitarContatoTelefone.php(3): SoapClient->SoapClient('http://localhos...')
+#1 {main}
+  thrown in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 3
+[23-Nov-2016 01:15:20 America/Sao_Paulo] PHP Warning:  stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed in /var/www/html/public/lib/phpmailer/class.smtp.php on line 358
+[23-Nov-2016 01:17:09 America/Sao_Paulo] PHP Warning:  stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed in /var/www/html/public/lib/phpmailer/class.smtp.php on line 358
+[23-Nov-2016 01:18:09 America/Sao_Paulo] PHP Warning:  stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages:
+error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed in /var/www/html/public/lib/phpmailer/class.smtp.php on line 358
+[23-Nov-2016 01:44:02 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /var/www/html/public/lib/slack/slack.php on line 5
+[23-Nov-2016 01:47:20 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /var/www/html/public/lib/slack/slack.php on line 5
+[23-Nov-2016 01:57:02 America/Sao_Paulo] PHP Notice:  Undefined index: telefone in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 2
+[23-Nov-2016 01:57:03 America/Sao_Paulo] PHP Notice:  Undefined index: telefone in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 2
+[23-Nov-2016 02:00:13 America/Sao_Paulo] PHP Notice:  Undefined index: telefone in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 7
+[23-Nov-2016 02:00:52 America/Sao_Paulo] PHP Notice:  Undefined index: telefone in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 7
+[23-Nov-2016 03:16:18 America/Sao_Paulo] PHP Notice:  Undefined index: telefone in /var/www/html/public/lib/SolicitarContatoTelefone.php on line 2
+[23-Nov-2016 05:37:47 America/Sao_Paulo] PHP Warning:  require_once(.../iugu-php/lib/Iugu.php): failed to open stream: No such file or directory in /var/www/html/public/lib/iuguteste.php on line 3
+[23-Nov-2016 05:37:47 America/Sao_Paulo] PHP Fatal error:  require_once(): Failed opening required '.../iugu-php/lib/Iugu.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/html/public/lib/iuguteste.php on line 3
+[24-Nov-2016 03:24:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$payment_method' (T_VARIABLE) in /var/www/html/public/iuguteste.php on line 16
+[24-Nov-2016 03:24:59 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$payment_method' (T_VARIABLE) in /var/www/html/public/iuguteste.php on line 16
+[24-Nov-2016 03:25:21 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$payment_method' (T_VARIABLE) in /var/www/html/public/iuguteste.php on line 16
+[24-Nov-2016 03:26:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$payment_method' (T_VARIABLE) in /var/www/html/public/iuguteste.php on line 9
+[24-Nov-2016 03:29:05 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$payment_method' (T_VARIABLE) in /var/www/html/public/iuguteste.php on line 16

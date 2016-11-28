@@ -70,6 +70,18 @@ body {
     color: #fbaf36;
 }
 
+.btn-menu {
+    border-radius: 0;
+    color: #333;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.btn-menu:hover,
+.btn-menu:focus,
+.btn-menu:active {
+    color: #000;
+}
+
 /* Custom Horizontal Rule */
 
 hr.small {

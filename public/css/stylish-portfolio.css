@@ -851,3 +851,11 @@ footer {
     color: #fbaf36;
     font-weight: bold;
 }
+
+
+
+@media screen and (max-width: 991px) {
+    .home-imgdemo {
+        display: none;
+    }
+}

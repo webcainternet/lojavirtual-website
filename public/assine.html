@@ -97,6 +97,12 @@
     <script src="js/jquery.maskedinput.min.js"></script>
 
     <script type="text/javascript">
+        //Mascara Telefone e valida email
+        $(document).ready(function(){
+            $("#telefone").mask("(99) 9999-9999?9");
+            $( "#email" ).change(function() { validarEmail( "email" ); });
+        });
+    
         //Solicitar Contato
         $(document).ready(function(){
             $("#criarloja").click(function(){

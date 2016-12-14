@@ -5,9 +5,62 @@
 	$server->register('hello');
 	$server->register('solicitacontato');
 	$server->register('cadastrarnewsletter');
+	$server->register('criarloja');
 
 	function hello($nome) {
 		return 'Olá '.$nome;
+	}
+
+	function criarloja($email,$nome,$telefone,$url) {
+		require 'phpmailer/PHPMailerAutoload.php';
+
+		$mail = new PHPMailer;
+
+		//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+		$mail->isSMTP();                                      // Set mailer to use SMTP
+		$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+		$mail->SMTPAuth = true;                               // Enable SMTP authentication
+		$mail->Username = 'fernando.mendes@webca.com.br';                 // SMTP username
+		$mail->Password = 'lV1rtFm3%1';                           // SMTP password
+		$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+		$mail->Port = 587;                                    // TCP port to connect to
+
+		/* $mail->smtpConnect(array(
+			        "ssl" => array(
+			            "verify_peer" => false,
+			            "verify_peer_name" => false,
+			            "allow_self_signed" => true
+			        )
+			    )
+			); */
+
+		$mail->setFrom('fernando.mendes@lojavirtual.digital', 'Fernando de Figueiredo Mendes');
+		$mail->addAddress('fernando.mendes@webca.com.br');     // Add a recipient
+		$mail->addAddress('support@webca.zendesk.com');        // Name is optional
+		//$mail->addReplyTo('info@example.com', 'Information');
+		//$mail->addCC('cc@example.com');
+		//$mail->addBCC('bcc@example.com');
+
+		//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+		//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+		$mail->isHTML(true);                                  // Set email format to HTML
+
+		$mail->Subject = utf8_decode('Criar loja - '.$url);
+		$mail->Body    = utf8_decode('<p>Olá,</p><p>Foi solicitado a criação da loja:</p><p>'.$email.'</p><p>'.$nome.'</p><p>'.$telefone.'</p><p>'.$url.'</p>');
+		$mail->AltBody = utf8_decode('Olá,Foi solicitado a criação da loja:'.$email.' - '.$nome.' - '.$telefone.' - '.$url);
+
+		// Slack message
+		require 'slack/slack.php';
+
+		if(!$mail->send()) {
+		    $err = 'Mailer Error: ' . $mail->ErrorInfo;
+		    slack('Ocorreu um erro na solicitação de criação de loja. '.$err.' >> Solicitado criação de loja: '.$email.' - '.$nome.' - '.$telefone.' - '.$url, 'lojavirtual', 'Criação de loja (ERRO)');
+		    return "Ocorreu um erro!";
+		} else {
+			slack('Solicitado criação de loja: '.$email.' - '.$nome.' - '.$telefone.' - '.$url, 'lojavirtual', 'Criação de loja');
+		    return 1;
+		}
 	}
 
 	function solicitacontato($telefone) {

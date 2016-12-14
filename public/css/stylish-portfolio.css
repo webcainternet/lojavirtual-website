@@ -869,3 +869,38 @@ footer {
     }
 }
 /* FIM Ajustes respoinsivo home */
+
+
+
+
+
+
+/* Assinar */
+
+.assinar {
+    color: rgb(255, 255, 255);
+    background-color: rgb(251, 175, 54);
+}
+
+.text-assine {
+    padding: 5px;
+    border: solid 2px #FFFFFF;
+    background: #fbaf36;
+    width: 100%;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.btn-assine {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    color: #fbaf36;
+    background-color: #fff;
+    border: solid 2px #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+/* FIM Assinar */
